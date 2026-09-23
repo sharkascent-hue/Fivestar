@@ -4,352 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Five Star Home Improvement | Garden, Landscaping &amp; Home Repairs in Dublin</title>
-<meta name="description" content="Five Star Home Improvement – a small family business in Dublin with many years' experience. Landscaping, tree care, roofing &amp; guttering, exterior cleaning, moss removal, fencing, artificial grass, painting, flooring, tiling, electrical, plumbing and handyman services. Call +353 85 118 4881.">
+<meta name="description" content="Five Star Home Improvement: a small family business in Dublin with many years' experience. Landscaping, tree care, hedge trimming, roofing, exterior cleaning, fencing, driveways, painting, flooring, electrical, plumbing and handyman services. Call +353 85 118 4881.">
 <meta name="theme-color" content="#1d4d1f">
-<meta property="og:title" content="Five Star Home Improvement – Dublin">
-<meta property="og:description" content="Garden &amp; landscaping care, maintenance, services and repairs across Dublin. Family run, many years' experience.">
+<meta property="og:title" content="Five Star Home Improvement | Garden, Landscaping &amp; Home Repairs in Dublin">
+<meta property="og:description" content="Five Star Home Improvement: a small family business in Dublin with many years' experience. Landscaping, tree care, hedge trimming, roofing, exterior cleaning, fencing, driveways, painting, flooring, electrical, plumbing and handyman services. Call +353 85 118 4881.">
 <meta property="og:image" content="assets/logo-600.jpg">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HomeAndConstructionBusiness",
-  "name": "Five Star Home Improvement",
-  "description": "Family-run garden, landscaping and home improvement business in Dublin.",
-  "telephone": "+353851184881",
-  "email": "Fivestarhomeimprovements701@gmail.com",
-  "image": "assets/logo-600.jpg",
-  "areaServed": "Dublin, Ireland",
-  "address": {"@type": "PostalAddress", "addressLocality": "Dublin", "addressCountry": "IE"}
-}
+{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"Five Star Home Improvement","description":"Family-run garden, landscaping and home improvement business in Dublin.","telephone":"+353851184881","email":"Fivestarhomeimprovements701@gmail.com","image":"assets/logo-600.jpg","areaServed":"Dublin, Ireland","address":{"@type":"PostalAddress","addressLocality":"Dublin","addressCountry":"IE"}}
 </script>
-<style>
-:root{
-  --green-900:#0f2e12;
-  --green-800:#1d4d1f;
-  --green-700:#256b28;
-  --green-500:#4f9a2f;
-  --lime:#7cc243;
-  --gold:#f2b632;
-  --gold-deep:#d99a14;
-  --cream:#f7f6ef;
-  --paper:#ffffff;
-  --ink:#1b2a1c;
-  --muted:#5b6b5c;
-  --line:#e2e6dc;
-  --radius:18px;
-  --shadow:0 18px 40px -18px rgba(15,46,18,.35);
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'Montserrat',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;overflow-x:hidden}
-body.loading{overflow:hidden}
-img{max-width:100%;height:auto;display:block}
-a{color:inherit}
-.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
-h1,h2,h3{font-family:'Zilla Slab',Georgia,serif;line-height:1.1;color:var(--green-800)}
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--green-500)}
-.eyebrow::before{content:"";width:28px;height:2px;background:currentColor}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:999px;font-weight:700;text-decoration:none;font-size:.95rem;transition:transform .25s,box-shadow .25s,background .25s;border:0;cursor:pointer;font-family:inherit}
-.btn svg{width:20px;height:20px}
-.btn-gold{background:var(--gold);color:var(--green-900);box-shadow:0 10px 24px -10px rgba(242,182,50,.8)}
-.btn-gold:hover{transform:translateY(-3px);background:#ffc84a}
-.btn-ghost{background:rgba(255,255,255,.1);color:#fff;border:1.5px solid rgba(255,255,255,.4)}
-.btn-ghost:hover{background:rgba(255,255,255,.2);transform:translateY(-3px)}
-.btn-green{background:var(--green-700);color:#fff}
-.btn-green:hover{background:var(--green-800);transform:translateY(-3px)}
-
-/* ---------- Intro animation ---------- */
-#intro{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:radial-gradient(circle at 50% 40%,#2c6e2f 0%,var(--green-900) 70%);transition:clip-path 1s cubic-bezier(.77,0,.18,1);clip-path:circle(150% at 50% 50%)}
-#intro.done{clip-path:circle(0% at 50% 50%);pointer-events:none}
-.intro-inner{text-align:center;color:#fff;padding:16px}
-.intro-house{width:150px;height:130px;margin:0 auto 6px}
-.intro-house path{fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:420;stroke-dashoffset:420;animation:draw 1.2s .2s ease forwards}
-.intro-house .win{fill:var(--lime);opacity:0;animation:fadeIn .4s 1.2s forwards}
-.intro-stars{display:flex;justify-content:center;gap:10px;margin:0 0 18px;align-items:flex-end}
-.intro-stars svg{width:30px;height:30px;fill:var(--gold);opacity:0;transform:scale(0) rotate(-90deg);animation:starPop .5s cubic-bezier(.3,1.6,.5,1) forwards}
-.intro-stars svg:nth-child(3){width:42px;height:42px}
-.intro-stars svg:nth-child(2),.intro-stars svg:nth-child(4){width:35px;height:35px}
-.intro-stars svg:nth-child(1){animation-delay:1.3s}
-.intro-stars svg:nth-child(2){animation-delay:1.45s}
-.intro-stars svg:nth-child(3){animation-delay:1.6s}
-.intro-stars svg:nth-child(4){animation-delay:1.75s}
-.intro-stars svg:nth-child(5){animation-delay:1.9s}
-.intro-title{font-family:'Zilla Slab',serif;font-size:clamp(2.4rem,8vw,4.4rem);letter-spacing:.04em;overflow:hidden;color:#fff}
-.intro-title span{display:inline-block;transform:translateY(110%);animation:rise .7s cubic-bezier(.2,.8,.2,1) forwards}
-.intro-sub{margin-top:8px;font-size:clamp(.72rem,2.6vw,.95rem);letter-spacing:.35em;text-transform:uppercase;color:var(--lime);opacity:0;animation:fadeIn .8s 2.6s forwards}
-.intro-bar{width:180px;height:3px;background:rgba(255,255,255,.15);margin:24px auto 0;border-radius:3px;overflow:hidden}
-.intro-bar i{display:block;height:100%;width:0;background:var(--gold);animation:load 2.9s .1s ease-in-out forwards}
-@keyframes draw{to{stroke-dashoffset:0}}
-@keyframes fadeIn{to{opacity:1}}
-@keyframes starPop{to{opacity:1;transform:scale(1) rotate(0)}}
-@keyframes rise{to{transform:translateY(0)}}
-@keyframes load{to{width:100%}}
-
-/* ---------- Header ---------- */
-header{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .3s,box-shadow .3s,padding .3s;padding:18px 0}
-header.scrolled{background:rgba(255,255,255,.96);backdrop-filter:blur(10px);box-shadow:0 6px 20px -12px rgba(0,0,0,.25);padding:10px 0}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
-.brand img{width:48px;height:48px;border-radius:50%;background:#fff;object-fit:cover;border:2px solid var(--gold)}
-.brand b{font-family:'Zilla Slab',serif;font-size:1.25rem;line-height:1;display:block;letter-spacing:.02em}
-.brand small{font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;opacity:.85}
-header.scrolled .brand{color:var(--green-800)}
-.menu{display:flex;gap:28px;list-style:none;align-items:center}
-.menu a{text-decoration:none;color:#fff;font-weight:600;font-size:.9rem;position:relative}
-.menu a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;background:var(--gold);transition:width .3s}
-.menu a:not(.btn):hover::after{width:100%}
-header.scrolled .menu a:not(.btn){color:var(--green-800)}
-.menu .btn{padding:10px 18px;font-size:.85rem}
-.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;position:relative}
-.burger span{position:absolute;left:10px;right:10px;height:2.5px;background:#fff;border-radius:2px;transition:.3s}
-.burger span:nth-child(1){top:14px}.burger span:nth-child(2){top:21px}.burger span:nth-child(3){top:28px}
-header.scrolled .burger span{background:var(--green-800)}
-body.nav-open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-body.nav-open .burger span:nth-child(2){opacity:0}
-body.nav-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-
-/* ---------- Hero ---------- */
-.hero{position:relative;min-height:100svh;display:flex;align-items:center;background:linear-gradient(160deg,rgba(15,46,18,.96) 0%,rgba(29,77,31,.88) 50%,rgba(37,107,40,.72) 100%),url(assets/work/garden-lit.jpg) center/cover;color:#fff;overflow:hidden;padding:120px 0 90px}
-.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 30%,rgba(124,194,67,.25),transparent 45%),radial-gradient(circle at 10% 90%,rgba(242,182,50,.12),transparent 40%)}
-.leaf{position:absolute;width:60px;height:60px;opacity:.14;fill:var(--lime);animation:drift linear infinite}
-@keyframes drift{0%{transform:translateY(-10vh) rotate(0)}100%{transform:translateY(110vh) rotate(540deg)}}
-.hero-grid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
-.hero h1{color:#fff;font-size:clamp(2.5rem,5.6vw,4.6rem);margin:18px 0 20px}
-.hero h1 em{font-style:normal;color:var(--gold)}
-.hero .eyebrow{color:var(--lime)}
-.hero p.lead{font-size:1.1rem;max-width:540px;color:rgba(255,255,255,.85)}
-.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin:34px 0 36px}
-.hero-points{display:flex;flex-wrap:wrap;gap:12px 26px;list-style:none;font-size:.9rem;font-weight:600}
-.hero-points li{display:flex;gap:8px;align-items:center}
-.hero-points svg{width:18px;height:18px;fill:var(--gold);flex:none}
-.hero-card{position:relative;background:#fff;border-radius:28px;padding:22px;box-shadow:0 40px 80px -30px rgba(0,0,0,.6);animation:float 6s ease-in-out infinite}
-.hero-card img{border-radius:12px}
-.hero-card .badge{position:absolute;left:-18px;top:-18px;background:var(--gold);color:var(--green-900);font-weight:700;padding:12px 16px;border-radius:14px;font-size:.8rem;box-shadow:var(--shadow);line-height:1.3}
-.hero-card .badge b{display:block;font-family:'Zilla Slab',serif;font-size:1.3rem}
-@keyframes float{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-14px) rotate(1deg)}}
-.scroll-hint{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);width:26px;height:42px;border:2px solid rgba(255,255,255,.5);border-radius:14px}
-.scroll-hint::after{content:"";position:absolute;left:50%;top:8px;width:4px;height:8px;margin-left:-2px;background:#fff;border-radius:2px;animation:wheel 1.6s infinite}
-@keyframes wheel{to{transform:translateY(14px);opacity:0}}
-
-/* ---------- Ticker ---------- */
-.ticker{background:var(--gold);color:var(--green-900);overflow:hidden;padding:14px 0;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.85rem}
-.ticker-track{display:flex;width:max-content;animation:tick 40s linear infinite}
-.ticker-track span{display:flex;align-items:center;gap:22px;padding-right:22px;white-space:nowrap}
-.ticker-track span::after{content:"★";color:var(--green-700)}
-@keyframes tick{to{transform:translateX(-50%)}}
-
-/* ---------- Sections ---------- */
-section{padding:100px 0}
-.section-head{text-align:center;max-width:720px;margin:0 auto 56px}
-.section-head h2{font-size:clamp(2rem,4vw,3rem);margin:12px 0 14px}
-.section-head p{color:var(--muted);font-size:1.05rem}
-
-/* About */
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.about-img{position:relative}
-.about-img img{border-radius:var(--radius);box-shadow:var(--shadow);background:#fff}
-.about-img::before{content:"";position:absolute;inset:24px -24px -24px 24px;border:3px solid var(--lime);border-radius:var(--radius);z-index:-1}
-.about h2{font-size:clamp(2rem,4vw,2.8rem);margin:12px 0 18px}
-.about p{color:var(--muted);margin-bottom:16px}
-.pillars{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px}
-.pillar{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;gap:14px;align-items:flex-start}
-.pillar svg{width:34px;height:34px;flex:none;stroke:var(--green-700);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.pillar b{display:block;color:var(--green-800)}
-.pillar span{font-size:.85rem;color:var(--muted)}
-
-/* About collage */
-.collage{display:grid;grid-template-columns:1.3fr 1fr;grid-template-rows:1fr 1fr;gap:14px;aspect-ratio:5/4}
-.collage img{width:100%;height:100%;object-fit:cover;border-radius:14px;box-shadow:var(--shadow)}
-.collage img:first-child{grid-row:1/3}
-
-/* Services */
-.services{background:#fff}
-.tabs{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-bottom:40px}
-.tab{border:1.5px solid var(--line);background:#fff;padding:11px 20px;border-radius:999px;font-weight:700;font-family:inherit;font-size:.88rem;color:var(--green-800);cursor:pointer;transition:.25s}
-.tab:hover{border-color:var(--lime)}
-.tab.active{background:var(--green-800);border-color:var(--green-800);color:#fff}
-.svc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px}
-.svc{position:relative;background:var(--cream);border-radius:var(--radius);padding:0 24px 28px;border:1px solid var(--line);overflow:hidden;transition:transform .35s,box-shadow .35s,background .35s}
-.svc::after{content:"";position:absolute;left:0;bottom:0;height:4px;width:0;background:linear-gradient(90deg,var(--lime),var(--gold));transition:width .4s}
-.svc:hover{transform:translateY(-8px);box-shadow:var(--shadow);background:#fff}
-.svc:hover::after{width:100%}
-.svc.hide{display:none}
-.svc-top{height:170px;margin:0 -24px;position:relative;overflow:hidden;background:linear-gradient(135deg,var(--green-800),var(--green-700));display:grid;place-items:center}
-.svc-top img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
-.svc:hover .svc-top img{transform:scale(1.08)}
-.svc-top>svg{width:90px;height:90px;stroke:rgba(255,255,255,.16);fill:none;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
-.svc-top::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(15,46,18,.35))}
-.svc .ico{width:58px;height:58px;border-radius:16px;background:var(--green-800);display:grid;place-items:center;margin:-29px 0 16px;position:relative;z-index:1;border:3px solid var(--cream);transition:transform .4s}
-.svc:hover .ico{border-color:#fff}
-.svc:hover .ico{transform:rotate(-8deg) scale(1.08);background:var(--green-700)}
-.svc .ico svg{width:30px;height:30px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.svc h3{font-size:1.3rem;margin-bottom:8px}
-.svc p{font-size:.9rem;color:var(--muted)}
-.svc .tag{position:absolute;top:14px;right:14px;z-index:1;font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--green-900);background:rgba(255,255,255,.92);padding:4px 10px;border-radius:999px}
-
-/* Before / after cleaning */
-.clean{background:var(--cream)}
-.clean-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center}
-.clean h2{font-size:clamp(2rem,4vw,2.8rem);margin:12px 0 16px}
-.clean p{color:var(--muted);margin-bottom:14px}
-.clean ul{list-style:none;display:grid;gap:8px;margin:18px 0 26px;font-weight:600;color:var(--green-800);font-size:.92rem}
-.clean li{display:flex;gap:10px;align-items:center}
-.clean li svg{width:16px;height:16px;fill:var(--gold);flex:none}
-.ba{position:relative;aspect-ratio:4/3;border-radius:22px;overflow:hidden;box-shadow:0 30px 60px -25px rgba(15,46,18,.55);user-select:none;touch-action:pan-y;cursor:ew-resize;background:#777}
-.ba canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
-.ba .dirty{clip-path:inset(0 calc(100% - var(--x,50%)) 0 0)}
-.ba-line{position:absolute;top:0;bottom:0;left:var(--x,50%);width:4px;margin-left:-2px;background:#fff;box-shadow:0 0 12px rgba(0,0,0,.4);pointer-events:none}
-.ba-knob{position:absolute;top:50%;left:var(--x,50%);width:62px;height:62px;margin:-31px 0 0 -31px;border-radius:50%;background:var(--gold);border:4px solid #fff;display:grid;place-items:center;box-shadow:0 8px 20px rgba(0,0,0,.35);pointer-events:none}
-.ba-knob svg{width:30px;height:30px;stroke:var(--green-900);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-.ba-tag{position:absolute;top:16px;padding:7px 14px;border-radius:999px;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;pointer-events:none;transition:opacity .3s}
-.ba-tag.b{left:16px;background:rgba(0,0,0,.6);color:#fff}
-.ba-tag.a{right:16px;background:var(--lime);color:var(--green-900)}
-.ba-spray{position:absolute;top:0;bottom:0;left:var(--x,50%);width:70px;margin-left:-35px;pointer-events:none;opacity:0;transition:opacity .3s;background:radial-gradient(ellipse at center,rgba(255,255,255,.55),rgba(210,235,255,.18) 45%,transparent 70%);filter:blur(2px)}
-.ba.washing .ba-spray{opacity:1;animation:mist .25s infinite alternate}
-@keyframes mist{from{transform:scaleX(.8)}to{transform:scaleX(1.15)}}
-.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
-.ba input:focus-visible ~ .ba-knob{outline:3px solid var(--green-900);outline-offset:3px}
-.ba-hint{text-align:center;font-size:.82rem;color:var(--muted);margin-top:12px;font-weight:600}
-
-/* Gallery */
-.gallery{background:#fff}
-.gal-grid{columns:3 280px;column-gap:18px}
-.gal-item{break-inside:avoid;margin-bottom:18px;position:relative;border-radius:16px;overflow:hidden;cursor:zoom-in;display:block;width:100%;border:0;padding:0;background:var(--line)}
-.gal-item img{width:100%;transition:transform .7s}
-.gal-item:hover img{transform:scale(1.06)}
-.gal-item figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 16px 14px;background:linear-gradient(transparent,rgba(10,32,12,.85));color:#fff;font-size:.85rem;font-weight:600;text-align:left;transform:translateY(8px);opacity:.92;transition:.35s}
-.gal-item:hover figcaption{transform:none;opacity:1}
-.gal-item figcaption small{display:block;color:var(--gold);font-size:.66rem;letter-spacing:.16em;text-transform:uppercase}
-.gal-item.hide{display:none}
-.lb{position:fixed;inset:0;z-index:90;background:rgba(6,20,8,.94);display:none;align-items:center;justify-content:center;padding:60px 16px}
-.lb.open{display:flex;animation:fadeIn .3s forwards;opacity:0}
-.lb img{max-width:min(1100px,100%);max-height:78vh;border-radius:12px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
-.lb p{position:absolute;bottom:22px;left:16px;right:16px;text-align:center;color:#fff;font-weight:600}
-.lb button{position:absolute;background:rgba(255,255,255,.12);border:0;color:#fff;width:52px;height:52px;border-radius:50%;font-size:1.6rem;cursor:pointer;transition:background .2s}
-.lb button:hover{background:var(--gold);color:var(--green-900)}
-.lb .x{top:16px;right:16px}.lb .pv{left:16px;top:50%;margin-top:-26px}.lb .nx{right:16px;top:50%;margin-top:-26px}
-
-/* Why / numbers band */
-.band{background:linear-gradient(135deg,rgba(29,77,31,.95),rgba(15,46,18,.97)),url(assets/work/kitchen.jpg) center/cover fixed;color:#fff;position:relative;overflow:hidden}
-.band h2{color:#fff}
-.band .section-head p{color:rgba(255,255,255,.75)}
-.band .eyebrow{color:var(--lime)}
-.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
-.why{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:28px 22px;text-align:center;transition:.3s}
-.why:hover{background:rgba(255,255,255,.1);transform:translateY(-6px)}
-.why svg{width:42px;height:42px;stroke:var(--gold);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin:0 auto 14px}
-.why h3{color:#fff;font-size:1.2rem;margin-bottom:8px}
-.why p{font-size:.88rem;color:rgba(255,255,255,.75)}
-
-/* Process */
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:s;position:relative}
-.steps::before{content:"";position:absolute;top:34px;left:12%;right:12%;height:2px;background:repeating-linear-gradient(90deg,var(--lime) 0 10px,transparent 10px 20px)}
-.step{text-align:center;position:relative}
-.step .num{width:68px;height:68px;border-radius:50%;background:#fff;border:3px solid var(--lime);display:grid;place-items:center;margin:0 auto 18px;font-family:'Zilla Slab',serif;font-size:1.6rem;color:var(--green-800);position:relative;z-index:1;transition:.3s}
-.step:hover .num{background:var(--gold);border-color:var(--gold)}
-.step h3{font-size:1.2rem;margin-bottom:6px}
-.step p{font-size:.9rem;color:var(--muted)}
-
-/* Area */
-.area{background:#fff}
-.area-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
-.area h2{font-size:clamp(2rem,4vw,2.8rem);margin:12px 0 16px}
-.area p{color:var(--muted)}
-.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
-.chips span{background:var(--cream);border:1px solid var(--line);padding:8px 14px;border-radius:999px;font-size:.85rem;font-weight:600;color:var(--green-800)}
-.map{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3;background:var(--line)}
-.map iframe{width:100%;height:100%;border:0}
-
-/* CTA */
-.cta{padding:0;background:linear-gradient(#fff 50%,var(--green-900) 50%)}
-.cta-box{background:linear-gradient(120deg,var(--gold),#ffd36b);border-radius:28px;padding:56px;display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap;position:relative;overflow:hidden;box-shadow:var(--shadow)}
-.cta-box>*:not(.stars){position:relative;z-index:1}
-.cta-box h2{font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--green-900)}
-.cta-box p{color:var(--green-800);font-weight:600;margin-top:6px}
-.cta-box .stars{position:absolute;right:-20px;top:-30px;font-size:9rem;color:rgba(255,255,255,.25);letter-spacing:-10px;pointer-events:none}
-
-/* Contact */
-.contact{background:var(--green-900);color:#fff}
-.contact h2{color:#fff}
-.contact .section-head p{color:rgba(255,255,255,.7)}
-.contact .eyebrow{color:var(--lime)}
-.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px}
-.cards{display:grid;gap:16px}
-.ccard{display:flex;gap:16px;align-items:center;padding:22px;border-radius:var(--radius);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);text-decoration:none;transition:.3s}
-.ccard:hover{background:rgba(255,255,255,.12);transform:translateX(6px)}
-.ccard .ic{width:52px;height:52px;border-radius:14px;background:var(--gold);display:grid;place-items:center;flex:none}
-.ccard .ic svg{width:26px;height:26px;stroke:var(--green-900);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.ccard small{display:block;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--lime);font-weight:700}
-.ccard b{font-size:1rem;overflow-wrap:anywhere}
-form{background:#fff;color:var(--ink);border-radius:var(--radius);padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
-form h3{grid-column:1/-1;font-size:1.5rem}
-form label{display:grid;gap:6px;font-size:.8rem;font-weight:700;color:var(--green-800)}
-form .full{grid-column:1/-1}
-input,select,textarea{font:inherit;font-weight:500;padding:13px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--cream);color:var(--ink);transition:border-color .2s;width:100%}
-input:focus,select:focus,textarea:focus{outline:none;border-color:var(--lime);background:#fff}
-textarea{min-height:120px;resize:vertical}
-form .btn{justify-content:center}
-.form-note{font-size:.78rem;color:var(--muted)}
-
-footer{background:#0a200c;color:rgba(255,255,255,.7);padding:40px 0 100px;font-size:.88rem}
-.foot{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
-footer .brand{color:#fff}
-footer a{color:var(--lime);text-decoration:none}
-
-/* Floating buttons */
-.fab{position:fixed;right:18px;bottom:18px;z-index:40;display:flex;flex-direction:column;gap:12px}
-.fab a{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;box-shadow:0 12px 26px -8px rgba(0,0,0,.45);transition:transform .25s}
-.fab a:hover{transform:scale(1.1)}
-.fab svg{width:28px;height:28px}
-.fab .wa{background:#25d366}
-.fab .wa svg{fill:#fff}
-.fab .ph{background:var(--gold);animation:ring 2.4s infinite}
-.fab .ph svg{fill:none;stroke:var(--green-900);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-@keyframes ring{0%{box-shadow:0 0 0 0 rgba(242,182,50,.7)}70%{box-shadow:0 0 0 18px rgba(242,182,50,0)}100%{box-shadow:0 0 0 0 rgba(242,182,50,0)}}
-
-/* Reveal */
-.reveal{opacity:0;transform:translateY(40px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
-.reveal.in{opacity:1;transform:none}
-.reveal.d1{transition-delay:.1s}.reveal.d2{transition-delay:.2s}.reveal.d3{transition-delay:.3s}
-.hero .reveal{transition-duration:1s}
-
-/* Responsive */
-@media (max-width:960px){
-  .hero-grid,.about-grid,.area-grid,.contact-grid,.clean-grid{grid-template-columns:1fr}
-  .band{background-attachment:scroll}
-  .hero-card{max-width:420px;margin:0 auto}
-  .why-grid{grid-template-columns:1fr 1fr}
-  .steps{grid-template-columns:1fr 1fr;row-gap:40px}
-  .steps::before{display:none}
-  .about-img{max-width:520px;margin:0 auto}
-}
-@media (max-width:820px){
-  .burger{display:block}
-  .menu{position:fixed;inset:0;background:var(--green-900);flex-direction:column;justify-content:center;gap:26px;transform:translateX(100%);transition:transform .45s cubic-bezier(.77,0,.18,1)}
-  .menu a:not(.btn),header.scrolled .menu a:not(.btn){color:#fff;font-size:1.3rem}
-  body.nav-open .menu{transform:none}
-  body.nav-open .burger span{background:#fff}
-  .burger{z-index:2}
-}
-@media (max-width:600px){
-  section{padding:72px 0}
-  .why-grid,.steps,.pillars{grid-template-columns:1fr}
-  form{grid-template-columns:1fr;padding:24px}
-  .cta-box{padding:36px 26px}
-  .hero-card .badge{left:-6px;top:-14px;font-size:.7rem;padding:9px 12px}
-  .about-img::before{inset:14px -10px -14px 10px}
-  .brand small{display:none}
-}
-@media (prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
-  .reveal{opacity:1;transform:none}
-  .leaf{display:none}
-}
-</style>
 </head>
 <body class="loading">
 
@@ -368,21 +35,17 @@ footer a{color:var(--lime);text-decoration:none}
     <symbol id="s-maint" viewBox="0 0 24 24"><path d="M3 21l4-4M6 21l1.5-6 7-7 3 3-7 7z"/><path d="M14.5 8l2-2 3 3-2 2M17 4l3 3"/></symbol>
     <symbol id="s-repair" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0 5 5L21 13l-8 8-3-3 1.3-1.3a4 4 0 0 1-5-5L3 8.4 8.4 3l3.3 3.3z"/></symbol>
     <symbol id="s-roof" viewBox="0 0 24 24"><path d="M2 12L12 4l10 8"/><path d="M5 10v10h14V10"/><path d="M8 13h8M8 16h8"/></symbol>
-    <symbol id="s-gutter" viewBox="0 0 24 24"><path d="M2 5h20v3a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"/><path d="M17 10v10M14 20h6"/><path d="M8 14c0 1-1 2-1 3a1 1 0 0 0 2 0c0-1-1-2-1-3z"/></symbol>
     <symbol id="s-clean" viewBox="0 0 24 24"><path d="M4 22h9l1-8H3z"/><path d="M8.5 14V6M5 6h7l2-3M17 6c.5 1 2 1.5 2 3M19 3c.5 1 2 1.5 2 3M16 11c.5 1 1.5 1.3 1.5 2.5"/></symbol>
-    <symbol id="s-moss" viewBox="0 0 24 24"><path d="M2 12L12 4l10 8"/><circle cx="8" cy="14" r="1.6"/><circle cx="13" cy="12" r="1.2"/><circle cx="15" cy="16" r="1.8"/><path d="M4 20l16-16"/></symbol>
-    <symbol id="s-chem" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6L4.5 19A2 2 0 0 0 6.3 22h11.4a2 2 0 0 0 1.8-3L14 9V3"/><path d="M7 15h10"/></symbol>
     <symbol id="s-drive" viewBox="0 0 24 24"><path d="M3 21l3-18h12l3 18z"/><path d="M4.5 12h15M12 3v4M12 10v4M12 17v4"/></symbol>
     <symbol id="s-fence" viewBox="0 0 24 24"><path d="M4 21V6l2-3 2 3v15M10 21V6l2-3 2 3v15M16 21V6l2-3 2 3v15"/><path d="M2 10h20M2 16h20"/></symbol>
     <symbol id="s-turf" viewBox="0 0 24 24"><path d="M2 20h20"/><path d="M4 20c0-4-1-7-2-9M7 20c0-5 1-9 3-12M10 20c0-3-.5-6-2-8M13 20c0-5 1-10 4-13M16 20c0-3-1-6-3-8M19 20c0-4 1-7 3-9"/></symbol>
-    <symbol id="s-artificial" viewBox="0 0 24 24"><rect x="2" y="13" width="20" height="7" rx="1"/><path d="M5 13V9M8 13V7M11 13V9M14 13V7M17 13V9M20 13V7"/></symbol>
     <symbol id="s-paint" viewBox="0 0 24 24"><rect x="3" y="3" width="15" height="6" rx="1"/><path d="M18 6h3v5h-9v3"/><rect x="10" y="14" width="4" height="8" rx="1"/></symbol>
     <symbol id="s-handy" viewBox="0 0 24 24"><path d="M15 12l-8.5 8.5a2.1 2.1 0 0 1-3-3L12 9"/><path d="M17.6 15L22 10.6M20.9 11.7l-6.6-6.6a6 6 0 0 0-8.5 0l6.6 6.6 2.1-2.1 4.3 4.3z"/></symbol>
     <symbol id="s-floor" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M3 15h18M9 3v6M15 9v6M9 15v6"/></symbol>
     <symbol id="s-elec" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></symbol>
     <symbol id="s-plumb" viewBox="0 0 24 24"><path d="M4 4h6v4H8v3a3 3 0 0 0 3 3h4v-2h4v8h-4v-2h-4a7 7 0 0 1-7-7V8z"/></symbol>
-    <symbol id="s-shed" viewBox="0 0 24 24"><path d="M2 10l10-7 10 7"/><path d="M4 9v12h16V9"/><path d="M9 21v-7h6v7M2 21h20"/></symbol>
-    <symbol id="s-wall" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="15"/><path d="M2 10h20M2 15h20M8 5v5M16 5v5M5 10v5M12 10v5M19 10v5M8 15v5M16 15v5"/></symbol>
+    <symbol id="s-hedge" viewBox="0 0 24 24"><path d="M3 20h18"/><path d="M4 20v-9c0-3 2.5-5 5-5 1-2 5-2 6 0 2.5 0 5 2 5 5v9"/><path d="M8 11v2M12 9v2M16 11v2M10 15v2M14 15v2"/></symbol>
+    <symbol id="s-flat" viewBox="0 0 24 24"><path d="M2 9h20"/><path d="M4 9v11h16V9"/><path d="M2 9l2-3h16l2 3"/><path d="M9 20v-5h6v5"/></symbol>
     <!-- why icons -->
     <symbol id="w-family" viewBox="0 0 24 24"><circle cx="8" cy="7" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M2 21v-2a5 5 0 0 1 5-5h2a5 5 0 0 1 5 5v2M14 21v-1.5a4 4 0 0 1 4-4h0a4 4 0 0 1 4 4V21"/></symbol>
     <symbol id="w-exp" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M8.2 13.2L7 22l5-3 5 3-1.2-8.8"/></symbol>
@@ -390,6 +53,7 @@ footer a{color:var(--lime);text-decoration:none}
     <symbol id="w-one" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></symbol>
   </defs>
 </svg>
+
 
 <!-- Intro -->
 <div id="intro" aria-hidden="true">
@@ -407,21 +71,19 @@ footer a{color:var(--lime);text-decoration:none}
   </div>
 </div>
 
-<!-- Header -->
 <header id="top">
   <div class="wrap nav">
-    <a href="#home" class="brand" aria-label="Five Star Home Improvement home">
+    <a href="index.html" class="brand" aria-label="Five Star Home Improvement home">
       <img src="assets/favicon.png" alt="">
       <span><b>Five Star</b><small>Home Improvement</small></span>
     </a>
     <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <ul class="menu">
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#gallery">Our work</a></li>
-      <li><a href="#cleaning">Cleaning</a></li>
-      <li><a href="#area">Areas</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
       <li><a href="tel:+353851184881" class="btn btn-gold"><svg><use href="#i-phone" fill="none" stroke="currentColor" stroke-width="2"/></svg>085 118 4881</a></li>
     </ul>
   </div>
@@ -435,10 +97,10 @@ footer a{color:var(--lime);text-decoration:none}
     <div>
       <span class="eyebrow reveal">Family business · Dublin</span>
       <h1 class="reveal d1">Your home &amp; garden, done to a <em>five star</em> standard.</h1>
-      <p class="lead reveal d2">Garden &amp; landscaping care, roofing and guttering, exterior cleaning and all the trades inside your home. A small family business with many years' experience. One call covers it all.</p>
+      <p class="lead reveal d2">Garden &amp; landscaping care, roofing, exterior cleaning and all the trades inside your home. A small family business with many years' experience. One call covers it all.</p>
       <div class="hero-cta reveal d3">
         <a href="tel:+353851184881" class="btn btn-gold"><svg><use href="#i-phone" fill="none" stroke="currentColor" stroke-width="2"/></svg>Call 085 118 4881</a>
-        <a href="#contact" class="btn btn-ghost">Get a free quote</a>
+        <a href="contact.html" class="btn btn-ghost">Get a free quote</a>
       </div>
       <ul class="hero-points reveal d3">
         <li><svg><use href="#star"/></svg>Family run</li>
@@ -458,12 +120,12 @@ footer a{color:var(--lime);text-decoration:none}
 
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track">
-    <span>Landscaping</span><span>Tree Care</span><span>Roofing</span><span>Guttering</span><span>Exterior Cleaning</span><span>Moss Removal</span><span>Driveways &amp; Patios</span><span>Fencing</span><span>Artificial Grass</span><span>Painting &amp; Decorating</span><span>Flooring &amp; Tiling</span><span>Electrician</span><span>Plumber</span><span>Handyman</span>
-    <span>Landscaping</span><span>Tree Care</span><span>Roofing</span><span>Guttering</span><span>Exterior Cleaning</span><span>Moss Removal</span><span>Driveways &amp; Patios</span><span>Fencing</span><span>Artificial Grass</span><span>Painting &amp; Decorating</span><span>Flooring &amp; Tiling</span><span>Electrician</span><span>Plumber</span><span>Handyman</span>
+    <span>Landscaping</span><span>Tree Care</span><span>Hedge Trimming</span><span>Roofing</span><span>Flat Roofing</span><span>Exterior Cleaning</span><span>Driveways &amp; Patios</span><span>Fencing</span><span>New Turf</span><span>Painting &amp; Decorating</span><span>Flooring &amp; Tiling</span><span>Electrician</span><span>Plumber</span><span>Handyman</span>
+    <span>Landscaping</span><span>Tree Care</span><span>Hedge Trimming</span><span>Roofing</span><span>Flat Roofing</span><span>Exterior Cleaning</span><span>Driveways &amp; Patios</span><span>Fencing</span><span>New Turf</span><span>Painting &amp; Decorating</span><span>Flooring &amp; Tiling</span><span>Electrician</span><span>Plumber</span><span>Handyman</span>
   </div>
 </div>
 
-<!-- About -->
+<!-- About teaser -->
 <section class="about" id="about">
   <div class="wrap about-grid">
     <div class="about-img reveal">
@@ -477,13 +139,8 @@ footer a{color:var(--lime);text-decoration:none}
       <span class="eyebrow reveal">About us</span>
       <h2 class="reveal d1">A small family business that takes pride in every job</h2>
       <p class="reveal d1">Five Star Home Improvement is a family-run business based in Dublin, built on many years' experience in home improvement, gardens and property maintenance.</p>
-      <p class="reveal d2">From a quick repair to a full garden makeover, a new roof or a freshly tiled floor, we treat your home as if it were our own. You deal with us directly from the first call to the final tidy-up.</p>
-      <div class="pillars">
-        <div class="pillar reveal d2"><svg><use href="#w-family"/></svg><div><b>Family run</b><span>You talk to the people doing the work</span></div></div>
-        <div class="pillar reveal d3"><svg><use href="#w-exp"/></svg><div><b>Experienced</b><span>Many years in the trade</span></div></div>
-        <div class="pillar reveal d2"><svg><use href="#s-maint"/></svg><div><b>Inside &amp; out</b><span>Garden, exterior and interior work</span></div></div>
-        <div class="pillar reveal d3"><svg><use href="#i-pin"/></svg><div><b>Dublin based</b><span>Serving Dublin and surrounding areas</span></div></div>
-      </div>
+      <p class="reveal d2">From a quick repair to a full garden makeover, a new roof or a freshly tiled floor, we treat your home as if it were our own.</p>
+      <a href="about.html" class="btn btn-green about-more reveal d3">More about us</a>
     </div>
   </div>
 </section>
@@ -496,37 +153,32 @@ footer a{color:var(--lime);text-decoration:none}
       <h2 class="reveal d1">Our services</h2>
       <p class="reveal d2">Maintenance, services and repairs. Everything your home and garden needs, from one trusted team.</p>
     </div>
-    <div class="tabs reveal" role="tablist">
+    <div class="tabs reveal" data-filter=".svc">
       <button class="tab active" data-f="all">All services</button>
       <button class="tab" data-f="garden">Garden &amp; landscaping</button>
       <button class="tab" data-f="exterior">Roofing &amp; exterior</button>
       <button class="tab" data-f="interior">Interior &amp; trades</button>
     </div>
     <div class="svc-grid">
-      <article class="svc reveal" data-c="garden"><span class="tag">Garden</span><div class="svc-top"><img src="assets/work/front-garden-gravel.jpg" alt="Front garden landscaping" loading="lazy"></div><div class="ico"><svg><use href="#s-landscape"/></svg></div><h3>Landscaping</h3><p>Garden design and makeovers, planting, beds, borders and full garden transformations.</p></article>
-      <article class="svc reveal" data-c="garden"><span class="tag">Garden</span><div class="svc-top"><svg><use href="#s-tree"/></svg></div><div class="ico"><svg><use href="#s-tree"/></svg></div><h3>Tree care</h3><p>Tree cutting, pruning, shaping, hedge trimming and removal of overgrown trees and shrubs.</p></article>
-      <article class="svc reveal" data-c="garden"><span class="tag">Garden</span><div class="svc-top"><svg><use href="#s-maint"/></svg></div><div class="ico"><svg><use href="#s-maint"/></svg></div><h3>Garden maintenance</h3><p>Grass cutting, weeding, tidy-ups and regular upkeep to keep your garden looking its best all year.</p></article>
-      <article class="svc reveal" data-c="garden"><span class="tag">Garden</span><div class="svc-top"><img src="assets/work/garden-lit.jpg" alt="New turf lawn" loading="lazy"></div><div class="ico"><svg><use href="#s-turf"/></svg></div><h3>Turf &amp; grass installation</h3><p>Ground preparation, levelling and new roll-out turf for a fresh, healthy lawn.</p></article>
-      <article class="svc reveal" data-c="garden"><span class="tag">Garden</span><div class="svc-top"><svg><use href="#s-artificial"/></svg></div><div class="ico"><svg><use href="#s-artificial"/></svg></div><h3>Artificial grass</h3><p>Low-maintenance artificial lawns, supplied and fitted neatly for a lawn that's green all year round.</p></article>
-      <article class="svc reveal" data-c="garden"><span class="tag">Garden</span><div class="svc-top"><img src="assets/work/fence-timber.jpg" alt="Timber panel fencing" loading="lazy"></div><div class="ico"><svg><use href="#s-fence"/></svg></div><h3>Fencing</h3><p>New fences fitted, plus fence repairs and replacement panels for privacy and security.</p></article>
-      <article class="svc reveal" data-c="garden"><span class="tag">Garden</span><div class="svc-top"><svg><use href="#s-wall"/></svg></div><div class="ico"><svg><use href="#s-wall"/></svg></div><h3>Walls &amp; boundaries</h3><p>Garden walls and boundaries built and repaired to define and protect your property.</p></article>
-      <article class="svc reveal" data-c="garden"><span class="tag">Garden</span><div class="svc-top"><svg><use href="#s-shed"/></svg></div><div class="ico"><svg><use href="#s-shed"/></svg></div><h3>Shed installation</h3><p>Sheds supplied, assembled and installed on a solid, level base.</p></article>
-      <article class="svc reveal" data-c="exterior"><span class="tag">Exterior</span><div class="svc-top"><svg><use href="#s-roof"/></svg></div><div class="ico"><svg><use href="#s-roof"/></svg></div><h3>Roofing</h3><p>New roofs fitted, plus roof servicing and repairs, from slipped tiles to leaks.</p></article>
-      <article class="svc reveal" data-c="exterior"><span class="tag">Exterior</span><div class="svc-top"><svg><use href="#s-gutter"/></svg></div><div class="ico"><svg><use href="#s-gutter"/></svg></div><h3>Guttering</h3><p>New guttering fitted, plus gutter cleaning, servicing and repairs to keep water flowing away from your home.</p></article>
-      <article class="svc reveal" data-c="exterior"><span class="tag">Exterior</span><div class="svc-top"><svg><use href="#s-clean"/></svg></div><div class="ico"><svg><use href="#s-clean"/></svg></div><h3>Exterior cleaning</h3><p>Power washing and cleaning of walls, paths, patios, driveways and more to restore your home's kerb appeal.</p></article>
-      <article class="svc reveal" data-c="exterior"><span class="tag">Exterior</span><div class="svc-top"><svg><use href="#s-moss"/></svg></div><div class="ico"><svg><use href="#s-moss"/></svg></div><h3>Moss removal</h3><p>Moss cleared from roofs, gutters, driveways and patios to protect surfaces and stop blockages.</p></article>
-      <article class="svc reveal" data-c="exterior"><span class="tag">Exterior</span><div class="svc-top"><svg><use href="#s-chem"/></svg></div><div class="ico"><svg><use href="#s-chem"/></svg></div><h3>Chemical treatments</h3><p>Treatment for driveways, patios, roofs and walls to kill moss, algae and weeds and keep them from coming back.</p></article>
-      <article class="svc reveal" data-c="exterior"><span class="tag">Exterior</span><div class="svc-top"><img src="assets/work/driveway-tarmac.jpg" alt="Tarmac driveway with granite border" loading="lazy"></div><div class="ico"><svg><use href="#s-drive"/></svg></div><h3>Driveways &amp; patios</h3><p>New driveways and patios, plus cleaning, re-sanding, sealing and repairs.</p></article>
-      <article class="svc reveal" data-c="interior"><span class="tag">Interior</span><div class="svc-top"><img src="assets/work/house-painted.jpg" alt="Painted house exterior" loading="lazy"></div><div class="ico"><svg><use href="#s-paint"/></svg></div><h3>Painting &amp; decorating</h3><p>Interior and exterior painting with a clean, careful finish, for single rooms or whole houses.</p></article>
-      <article class="svc reveal" data-c="interior"><span class="tag">Interior</span><div class="svc-top"><img src="assets/work/hallway-floor.jpg" alt="Herringbone floor in a hallway" loading="lazy"></div><div class="ico"><svg><use href="#s-floor"/></svg></div><h3>Flooring &amp; tiling</h3><p>Interior flooring and tile installation for kitchens, bathrooms, hallways and living areas.</p></article>
-      <article class="svc reveal" data-c="interior"><span class="tag">Trades</span><div class="svc-top"><img src="assets/work/room-floor.jpg" alt="Room with new downlights and sockets" loading="lazy"></div><div class="ico"><svg><use href="#s-elec"/></svg></div><h3>Electrician</h3><p>Electrical work around the home, from sockets and lighting to repairs and new fittings.</p></article>
-      <article class="svc reveal" data-c="interior"><span class="tag">Trades</span><div class="svc-top"><img src="assets/work/bathroom-1.jpg" alt="Renovated bathroom" loading="lazy"></div><div class="ico"><svg><use href="#s-plumb"/></svg></div><h3>Plumber</h3><p>Plumbing repairs and installations, including leaks, taps, toilets, showers and more.</p></article>
-      <article class="svc reveal" data-c="interior"><span class="tag">Trades</span><div class="svc-top"><svg><use href="#s-handy"/></svg></div><div class="ico"><svg><use href="#s-handy"/></svg></div><h3>Handyman</h3><p>All those odd jobs around the house: assembly, fixing, hanging and small repairs.</p></article>
-      <article class="svc reveal" data-c="interior"><span class="tag">Repairs</span><div class="svc-top"><img src="assets/work/kitchen.jpg" alt="Finished kitchen" loading="lazy"></div><div class="ico"><svg><use href="#s-repair"/></svg></div><h3>Repairs &amp; new fittings</h3><p>Repairs inside and out, plus new roofs, gutters, fences, floors and sheds, supplied and fitted.</p></article>
+      <article class="svc reveal" data-c="garden"><span class="tag">Garden</span><div class="svc-top"><img src="assets/work/front-garden-gravel.jpg" alt="Front garden with gravel and a curved granite path" loading="lazy"></div><div class="ico"><svg><use href="#s-landscape"/></svg></div><h3>Landscaping</h3><p>Garden design and makeovers, planting, beds, borders, paths and full garden transformations.</p></article>
+      <article class="svc reveal" data-c="garden"><span class="tag">Garden</span><div class="svc-top"><img src="assets/work/tree-pruned.jpg" alt="Tree pruned back in a front garden" loading="lazy"></div><div class="ico"><svg><use href="#s-tree"/></svg></div><h3>Tree care</h3><p>Tree cutting, pruning, crown reduction and removal of overgrown or unsafe trees.</p></article>
+      <article class="svc reveal" data-c="garden"><span class="tag">Garden</span><div class="svc-top"><img src="assets/work/hedge.jpg" alt="Tall, neatly trimmed hedge" loading="lazy"></div><div class="ico"><svg><use href="#s-hedge"/></svg></div><h3>Hedge trimming</h3><p>Hedges cut back, shaped and tidied, from small borders to tall boundary hedges.</p></article>
+      <article class="svc reveal" data-c="garden"><span class="tag">Garden</span><div class="svc-top"><img src="assets/work/lawn-patio.jpg" alt="Tidy back garden with lawn, patio and fence" loading="lazy"></div><div class="ico"><svg><use href="#s-maint"/></svg></div><h3>Garden maintenance</h3><p>Grass cutting, weeding, tidy-ups and regular upkeep to keep your garden looking its best all year.</p></article>
+      <article class="svc reveal" data-c="garden"><span class="tag">Garden</span><div class="svc-top"><img src="assets/work/garden-lit.jpg" alt="New turf lawn with patio and garden lighting" loading="lazy"></div><div class="ico"><svg><use href="#s-turf"/></svg></div><h3>Turf &amp; grass installation</h3><p>Ground preparation, levelling and new roll-out turf for a fresh, healthy lawn.</p></article>
+      <article class="svc reveal" data-c="garden"><span class="tag">Garden</span><div class="svc-top"><img src="assets/work/fence-timber.jpg" alt="Timber panel fencing with concrete posts" loading="lazy"></div><div class="ico"><svg><use href="#s-fence"/></svg></div><h3>Fencing</h3><p>New timber, composite and PVC fences fitted, plus repairs and replacement panels.</p></article>
+      <article class="svc reveal" data-c="exterior"><span class="tag">Exterior</span><div class="svc-top"><img src="assets/work/roof-tiles.jpg" alt="Newly tiled roof" loading="lazy"></div><div class="ico"><svg><use href="#s-roof"/></svg></div><h3>Roofing</h3><p>New roofs fitted, re-roofing and roof repairs, from slipped tiles to leaks.</p></article>
+      <article class="svc reveal" data-c="exterior"><span class="tag">Exterior</span><div class="svc-top"><img src="assets/work/roof-flat.jpg" alt="Felt flat roof being laid" loading="lazy"></div><div class="ico"><svg><use href="#s-flat"/></svg></div><h3>Flat roofing</h3><p>Flat roofs felted and repaired on extensions, garages and porches.</p></article>
+      <article class="svc reveal" data-c="exterior"><span class="tag">Exterior</span><div class="svc-top"><img src="assets/work/cleaning.jpg" alt="Driveway half cleaned, showing dirty and clean paving side by side" loading="lazy"></div><div class="ico"><svg><use href="#s-clean"/></svg></div><h3>Exterior cleaning</h3><p>Power washing and chemical treatment of driveways, patios, roofs and walls to remove moss, algae and weeds.</p></article>
+      <article class="svc reveal" data-c="exterior"><span class="tag">Exterior</span><div class="svc-top"><img src="assets/work/driveway-tarmac.jpg" alt="Tarmac driveway with a granite paving border" loading="lazy"></div><div class="ico"><svg><use href="#s-drive"/></svg></div><h3>Driveways &amp; patios</h3><p>New tarmac, block-paved and gravel driveways and patios, plus repairs and re-sanding.</p></article>
+      <article class="svc reveal" data-c="interior"><span class="tag">Interior</span><div class="svc-top"><img src="assets/work/house-painted.jpg" alt="Freshly painted house exterior" loading="lazy"></div><div class="ico"><svg><use href="#s-paint"/></svg></div><h3>Painting &amp; decorating</h3><p>Interior and exterior painting with a clean, careful finish, for single rooms or whole houses.</p></article>
+      <article class="svc reveal" data-c="interior"><span class="tag">Interior</span><div class="svc-top"><img src="assets/work/room-floor.jpg" alt="Chevron wood-effect flooring in a finished room" loading="lazy"></div><div class="ico"><svg><use href="#s-floor"/></svg></div><h3>Flooring &amp; tiling</h3><p>Interior flooring and tile installation for kitchens, bathrooms, hallways and living areas.</p></article>
+      <article class="svc reveal" data-c="interior"><span class="tag">Trades</span><div class="svc-top"><img src="assets/work/hallway-floor.jpg" alt="Hallway with new downlights, sockets and switches" loading="lazy"></div><div class="ico"><svg><use href="#s-elec"/></svg></div><h3>Electrician</h3><p>Electrical work around the home, from sockets and lighting to repairs and new fittings.</p></article>
+      <article class="svc reveal" data-c="interior"><span class="tag">Trades</span><div class="svc-top"><img src="assets/work/bathroom-1.jpg" alt="Renovated bathroom with shower over bath" loading="lazy"></div><div class="ico"><svg><use href="#s-plumb"/></svg></div><h3>Plumber</h3><p>Plumbing repairs and installations, including bathrooms, leaks, taps, toilets and showers.</p></article>
+      <article class="svc reveal" data-c="interior"><span class="tag">Trades</span><div class="svc-top"><img src="assets/work/bathroom-2.jpg" alt="Bathroom with new towel rail and mirror fitted" loading="lazy"></div><div class="ico"><svg><use href="#s-handy"/></svg></div><h3>Handyman</h3><p>All those odd jobs around the house: assembly, fixing, hanging and small repairs.</p></article>
+      <article class="svc reveal" data-c="interior"><span class="tag">Repairs</span><div class="svc-top"><img src="assets/work/kitchen.jpg" alt="Finished kitchen with white units and a blue feature wall" loading="lazy"></div><div class="ico"><svg><use href="#s-repair"/></svg></div><h3>Repairs &amp; new fittings</h3><p>Repairs inside and out, plus new kitchens, floors, fences and roofs supplied and fitted.</p></article>
     </div>
   </div>
 </section>
-
 
 <!-- Before / after cleaning -->
 <section class="clean" id="cleaning">
@@ -537,11 +189,11 @@ footer a{color:var(--lime);text-decoration:none}
       <p class="reveal d1">Moss, algae, weeds and years of grime make driveways, patios, walls and roofs look tired and slippery. We power-wash and chemically treat them to bring back the original colour, and keep them clean for longer.</p>
       <ul class="reveal d2">
         <li><svg><use href="#star"/></svg>Driveways &amp; patios</li>
-        <li><svg><use href="#star"/></svg>Roofs, walls &amp; gutters</li>
-        <li><svg><use href="#star"/></svg>Moss removal &amp; chemical treatment</li>
+        <li><svg><use href="#star"/></svg>Roofs &amp; walls</li>
+        <li><svg><use href="#star"/></svg>Moss, algae &amp; weed treatment</li>
         <li><svg><use href="#star"/></svg>Re-sanding &amp; sealing</li>
       </ul>
-      <a href="#contact" class="btn btn-green reveal d3">Book a clean</a>
+      <a href="contact.html" class="btn btn-green reveal d3">Book a clean</a>
     </div>
     <div class="reveal d1">
       <div class="ba" id="ba" style="--x:100%">
@@ -558,47 +210,25 @@ footer a{color:var(--lime);text-decoration:none}
   </div>
 </section>
 
-<!-- Gallery -->
-<section class="gallery" id="gallery">
+<!-- Gallery preview -->
+<section class="gallery">
   <div class="wrap">
     <div class="section-head">
       <span class="eyebrow reveal">Our work</span>
       <h2 class="reveal d1">Recent projects</h2>
-      <p class="reveal d2">A few of the gardens, driveways, fences and interiors we've worked on. Tap any photo to see it bigger.</p>
+      <p class="reveal d2">A few of the gardens, roofs, driveways and interiors we've worked on.</p>
     </div>
-    <div class="tabs reveal" id="galTabs">
-      <button class="tab active" data-f="all">All</button>
-      <button class="tab" data-f="garden">Gardens</button>
-      <button class="tab" data-f="drive">Driveways</button>
-      <button class="tab" data-f="fence">Fencing</button>
-      <button class="tab" data-f="interior">Interiors</button>
+    <div class="gal-preview">
+      <a class="reveal" href="gallery.html"><img src="assets/work/garden-lit.jpg" alt="Full garden makeover: new lawn, patio, raised stone beds, fencing and lighting" loading="lazy"><span>Full garden makeover: new lawn, patio, raised stone beds, fencing and lighting</span></a>
+      <a class="reveal" href="gallery.html"><img src="assets/work/roof-tiles.jpg" alt="New tiled roof" loading="lazy"><span>New tiled roof</span></a>
+      <a class="reveal" href="gallery.html"><img src="assets/work/kitchen.jpg" alt="Kitchen fit-out and painting" loading="lazy"><span>Kitchen fit-out and painting</span></a>
+      <a class="reveal" href="gallery.html"><img src="assets/work/hedge.jpg" alt="Tall boundary hedge trimmed and shaped" loading="lazy"><span>Tall boundary hedge trimmed and shaped</span></a>
+      <a class="reveal" href="gallery.html"><img src="assets/work/bathroom-1.jpg" alt="Bathroom renovation" loading="lazy"><span>Bathroom renovation</span></a>
+      <a class="reveal" href="gallery.html"><img src="assets/work/lawn-patio.jpg" alt="New lawn, block-paved patio and path with timber fencing" loading="lazy"><span>New lawn, block-paved patio and path with timber fencing</span></a>
     </div>
-    <div class="gal-grid" id="gal">
-      <figure class="gal-item reveal" data-c="garden" tabindex="0" role="button" aria-label="View photo: Full garden makeover: new lawn, patio, raised stone beds, fencing and lighting"><img src="assets/work/garden-lit.jpg" alt="Full garden makeover: new lawn, patio, raised stone beds, fencing and lighting" loading="lazy"><figcaption><small>Garden</small>Full garden makeover: new lawn, patio, raised stone beds, fencing and lighting</figcaption></figure>
-      <figure class="gal-item reveal" data-c="drive" tabindex="0" role="button" aria-label="View photo: Tarmac driveway with granite paving border"><img src="assets/work/driveway-tarmac.jpg" alt="Tarmac driveway with granite paving border" loading="lazy"><figcaption><small>Driveway</small>Tarmac driveway with granite paving border</figcaption></figure>
-      <figure class="gal-item reveal" data-c="interior" tabindex="0" role="button" aria-label="View photo: Kitchen fit-out and painting"><img src="assets/work/kitchen.jpg" alt="Kitchen fit-out and painting" loading="lazy"><figcaption><small>Interior</small>Kitchen fit-out and painting</figcaption></figure>
-      <figure class="gal-item reveal" data-c="fence" tabindex="0" role="button" aria-label="View photo: Timber panel fencing with concrete posts"><img src="assets/work/fence-timber.jpg" alt="Timber panel fencing with concrete posts" loading="lazy"><figcaption><small>Fencing</small>Timber panel fencing with concrete posts</figcaption></figure>
-      <figure class="gal-item reveal" data-c="garden" tabindex="0" role="button" aria-label="View photo: Gravel front garden with curved granite path"><img src="assets/work/front-garden-gravel.jpg" alt="Gravel front garden with curved granite path" loading="lazy"><figcaption><small>Garden</small>Gravel front garden with curved granite path</figcaption></figure>
-      <figure class="gal-item reveal" data-c="interior" tabindex="0" role="button" aria-label="View photo: Bathroom renovation"><img src="assets/work/bathroom-1.jpg" alt="Bathroom renovation" loading="lazy"><figcaption><small>Bathroom</small>Bathroom renovation</figcaption></figure>
-      <figure class="gal-item reveal" data-c="fence" tabindex="0" role="button" aria-label="View photo: Grey composite fencing"><img src="assets/work/fence-grey.jpg" alt="Grey composite fencing" loading="lazy"><figcaption><small>Fencing</small>Grey composite fencing</figcaption></figure>
-      <figure class="gal-item reveal" data-c="interior" tabindex="0" role="button" aria-label="View photo: Herringbone flooring, painting and lighting"><img src="assets/work/hallway-floor.jpg" alt="Herringbone flooring, painting and lighting" loading="lazy"><figcaption><small>Flooring</small>Herringbone flooring, painting and lighting</figcaption></figure>
-      <figure class="gal-item reveal" data-c="drive" tabindex="0" role="button" aria-label="View photo: Block-paved driveway with edging"><img src="assets/work/driveway-block.jpg" alt="Block-paved driveway with edging" loading="lazy"><figcaption><small>Driveway</small>Block-paved driveway with edging</figcaption></figure>
-      <figure class="gal-item reveal" data-c="interior" tabindex="0" role="button" aria-label="View photo: Exterior painting"><img src="assets/work/house-painted.jpg" alt="Exterior painting" loading="lazy"><figcaption><small>Painting</small>Exterior painting</figcaption></figure>
-      <figure class="gal-item reveal" data-c="fence" tabindex="0" role="button" aria-label="View photo: White PVC fencing with lattice top"><img src="assets/work/fence-white.jpg" alt="White PVC fencing with lattice top" loading="lazy"><figcaption><small>Fencing</small>White PVC fencing with lattice top</figcaption></figure>
-      <figure class="gal-item reveal" data-c="interior" tabindex="0" role="button" aria-label="View photo: Bathroom: basin, towel rail and flooring"><img src="assets/work/bathroom-2.jpg" alt="Bathroom: basin, towel rail and flooring" loading="lazy"><figcaption><small>Bathroom</small>Bathroom: basin, towel rail and flooring</figcaption></figure>
-      <figure class="gal-item reveal" data-c="interior" tabindex="0" role="button" aria-label="View photo: Chevron flooring and decorating"><img src="assets/work/room-floor.jpg" alt="Chevron flooring and decorating" loading="lazy"><figcaption><small>Flooring</small>Chevron flooring and decorating</figcaption></figure>
-      <figure class="gal-item reveal" data-c="fence" tabindex="0" role="button" aria-label="View photo: Horizontal slatted fence, dark finish"><img src="assets/work/fence-black.jpg" alt="Horizontal slatted fence, dark finish" loading="lazy"><figcaption><small>Fencing</small>Horizontal slatted fence, dark finish</figcaption></figure>
-      <figure class="gal-item reveal" data-c="interior" tabindex="0" role="button" aria-label="View photo: Bathroom with shower over bath"><img src="assets/work/bathroom-3.jpg" alt="Bathroom with shower over bath" loading="lazy"><figcaption><small>Bathroom</small>Bathroom with shower over bath</figcaption></figure>
-    </div>
+    <div class="center-btn reveal"><a href="gallery.html" class="btn btn-green">See the full gallery</a></div>
   </div>
 </section>
-<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
-  <button class="x" aria-label="Close">&times;</button>
-  <button class="pv" aria-label="Previous photo">&#8249;</button>
-  <img alt="">
-  <button class="nx" aria-label="Next photo">&#8250;</button>
-  <p></p>
-</div>
 
 <!-- Why -->
 <section class="band">
@@ -617,39 +247,6 @@ footer a{color:var(--lime);text-decoration:none}
   </div>
 </section>
 
-<!-- Process -->
-<section id="process">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow reveal">How we work</span>
-      <h2 class="reveal d1">Simple from first call to finish</h2>
-    </div>
-    <div class="steps">
-      <div class="step reveal"><div class="num">1</div><h3>Get in touch</h3><p>Call, WhatsApp or email us with what you need.</p></div>
-      <div class="step reveal d1"><div class="num">2</div><h3>We visit &amp; quote</h3><p>We look at the job and give you a clear quote.</p></div>
-      <div class="step reveal d2"><div class="num">3</div><h3>We do the work</h3><p>Carried out carefully, on time, to a high standard.</p></div>
-      <div class="step reveal d3"><div class="num">4</div><h3>Tidy &amp; finish</h3><p>We clean up and make sure you're happy.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- Area -->
-<section class="area" id="area">
-  <div class="wrap area-grid">
-    <div>
-      <span class="eyebrow reveal">Where we work</span>
-      <h2 class="reveal d1">Proudly based in Dublin</h2>
-      <p class="reveal d2">We cover Dublin city and county and the surrounding areas. Not sure if we reach you? Just give us a call.</p>
-      <div class="chips reveal d3">
-        <span>Dublin City</span><span>North Dublin</span><span>South Dublin</span><span>West Dublin</span><span>Fingal</span><span>Dún Laoghaire–Rathdown</span><span>Surrounding areas</span>
-      </div>
-    </div>
-    <div class="map reveal d2">
-      <iframe title="Map of Dublin" loading="lazy" src="https://www.google.com/maps?q=Dublin,Ireland&z=10&output=embed" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </div>
-</section>
-
 <!-- CTA -->
 <section class="cta">
   <div class="wrap">
@@ -659,40 +256,7 @@ footer a{color:var(--lime);text-decoration:none}
         <h2>Ready to improve your home?</h2>
         <p>Call today for a free, no-obligation quote.</p>
       </div>
-      <a href="tel:+353851184881" class="btn btn-green"><svg><use href="#i-phone" fill="none" stroke="currentColor" stroke-width="2"/></svg>+353 85 118 4881</a>
-    </div>
-  </div>
-</section>
-
-<!-- Contact -->
-<section class="contact" id="contact">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow reveal">Contact</span>
-      <h2 class="reveal d1">Let's talk about your job</h2>
-      <p class="reveal d2">Call, WhatsApp or email. We'll get back to you as soon as we can.</p>
-    </div>
-    <div class="contact-grid">
-      <div class="cards">
-        <a class="ccard reveal" href="tel:+353851184881"><span class="ic"><svg><use href="#i-phone"/></svg></span><span><small>Call us</small><b>+353 85 118 4881</b></span></a>
-        <a class="ccard reveal d1" href="https://wa.me/353851184881?text=Hi%20Five%20Star%2C%20I%27d%20like%20a%20quote%20for%3A%20" target="_blank" rel="noopener"><span class="ic" style="background:#25d366"><svg style="fill:#fff;stroke:none"><use href="#i-wa"/></svg></span><span><small>WhatsApp</small><b>Message us on WhatsApp</b></span></a>
-        <a class="ccard reveal d2" href="mailto:Fivestarhomeimprovements701@gmail.com"><span class="ic"><svg><use href="#i-mail"/></svg></span><span><small>Email</small><b>Fivestarhomeimprovements701@gmail.com</b></span></a>
-        <div class="ccard reveal d3"><span class="ic"><svg><use href="#i-pin"/></svg></span><span><small>Based in</small><b>Dublin, Ireland</b></span></div>
-      </div>
-      <form id="quote" class="reveal d1">
-        <h3>Request a free quote</h3>
-        <label>Your name<input name="name" required autocomplete="name"></label>
-        <label>Phone<input name="phone" type="tel" required autocomplete="tel"></label>
-        <label>Area / address<input name="area" autocomplete="address-level2" placeholder="e.g. Swords, Dublin"></label>
-        <label>Service
-          <select name="service">
-            <option>Landscaping</option><option>Tree care</option><option>Garden maintenance</option><option>Turf / grass installation</option><option>Artificial grass</option><option>Fencing</option><option>Walls, boundaries &amp; sheds</option><option>Roofing</option><option>Guttering</option><option>Exterior cleaning</option><option>Moss removal</option><option>Chemical treatment</option><option>Driveways &amp; patios</option><option>Painting &amp; decorating</option><option>Flooring &amp; tiling</option><option>Electrician</option><option>Plumber</option><option>Handyman</option><option>Repairs</option><option>Something else</option>
-          </select>
-        </label>
-        <label class="full">Tell us about the job<textarea name="msg" placeholder="What needs doing, and when?"></textarea></label>
-        <button class="btn btn-gold full" type="submit"><svg><use href="#i-mail" fill="none" stroke="currentColor" stroke-width="2"/></svg>Send enquiry</button>
-        <p class="form-note full">This opens your email app with your details filled in. Prefer to talk? Call <a href="tel:+353851184881">085 118 4881</a>.</p>
-      </form>
+      <a href="contact.html" class="btn btn-green"><svg><use href="#i-phone" fill="none" stroke="currentColor" stroke-width="2"/></svg>Get in touch</a>
     </div>
   </div>
 </section>
@@ -700,8 +264,8 @@ footer a{color:var(--lime);text-decoration:none}
 
 <footer>
   <div class="wrap foot">
-    <a href="#home" class="brand"><img src="assets/favicon.png" alt=""><span><b>Five Star</b><small>Home Improvement</small></span></a>
-    <div>Garden &amp; Landscaping Care · Maintenance · Services · Repairs<br>Dublin · <a href="tel:+353851184881">+353 85 118 4881</a> · <a href="mailto:Fivestarhomeimprovements701@gmail.com">Email us</a></div>
+    <a href="index.html" class="brand"><img src="assets/favicon.png" alt=""><span><b>Five Star</b><small>Home Improvement</small></span></a>
+    <div>Garden &amp; Landscaping Care · Maintenance · Services · Repairs<br><a href="about.html">About</a> · <a href="gallery.html">Gallery</a> · <a href="contact.html">Contact</a> · <a href="tel:+353851184881">+353 85 118 4881</a></div>
     <div>© <span id="yr"></span> Five Star Home Improvement</div>
   </div>
 </footer>
@@ -711,197 +275,6 @@ footer a{color:var(--lime);text-decoration:none}
   <a class="ph" href="tel:+353851184881" aria-label="Call us"><svg><use href="#i-phone"/></svg></a>
 </div>
 
-<script>
-(function(){
-  var body=document.body, intro=document.getElementById('intro');
-  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var shown=false; try{shown=sessionStorage.getItem('fs-intro')==='1'}catch(e){}
-  function finish(){
-    intro.classList.add('done'); body.classList.remove('loading');
-    document.querySelectorAll('.hero .reveal').forEach(function(el){el.classList.add('in')});
-    setTimeout(function(){intro.remove()},1100);
-    try{sessionStorage.setItem('fs-intro','1')}catch(e){}
-  }
-  setTimeout(finish, (reduce||shown) ? 400 : 3200);
-
-  // falling leaves
-  if(!reduce){
-    var box=document.querySelector('.hero .leaves');
-    for(var i=0;i<9;i++){
-      var s=document.createElementNS('http://www.w3.org/2000/svg','svg');
-      s.setAttribute('class','leaf');
-      s.innerHTML='<use href="#leafs"/>';
-      var size=24+Math.random()*40;
-      s.style.cssText='left:'+(Math.random()*100)+'%;top:-10%;width:'+size+'px;height:'+size+'px;animation-duration:'+(14+Math.random()*14)+'s;animation-delay:-'+(Math.random()*20)+'s';
-      box.appendChild(s);
-    }
-  }
-
-  // header
-  var header=document.getElementById('top');
-  function onScroll(){header.classList.toggle('scrolled',window.scrollY>40)}
-  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
-
-  // mobile nav
-  var burger=document.querySelector('.burger');
-  burger.addEventListener('click',function(){
-    var open=body.classList.toggle('nav-open'); burger.setAttribute('aria-expanded',open);
-  });
-  document.querySelectorAll('.menu a').forEach(function(a){a.addEventListener('click',function(){body.classList.remove('nav-open');burger.setAttribute('aria-expanded','false')})});
-
-  // reveal on scroll
-  var els=document.querySelectorAll('.reveal:not(.hero .reveal)');
-  if('IntersectionObserver' in window){
-    var io=new IntersectionObserver(function(entries){
-      entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
-    },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
-    els.forEach(function(el){io.observe(el)});
-  } else els.forEach(function(el){el.classList.add('in')});
-
-  // service filter
-  var tabs=document.querySelectorAll('.tab'), cards=document.querySelectorAll('.svc');
-  tabs.forEach(function(t){t.addEventListener('click',function(){
-    tabs.forEach(function(x){x.classList.remove('active')}); t.classList.add('active');
-    var f=t.dataset.f;
-    cards.forEach(function(c,i){
-      var show=f==='all'||c.dataset.c===f;
-      c.classList.toggle('hide',!show);
-      if(show){c.classList.remove('in'); void c.offsetWidth; setTimeout(function(){c.classList.add('in')},30*(i%8))}
-    });
-  })});
-
-  // quote form -> email
-  document.getElementById('quote').addEventListener('submit',function(e){
-    e.preventDefault();
-    var d=new FormData(this);
-    var subject='Quote request: '+d.get('service')+' ('+d.get('name')+')';
-    var text='Name: '+d.get('name')+'\nPhone: '+d.get('phone')+'\nArea: '+d.get('area')+'\nService: '+d.get('service')+'\n\n'+d.get('msg');
-    window.location.href='mailto:Fivestarhomeimprovements701@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(text);
-  });
-
-
-  // gallery filter + lightbox
-  var gTabs=document.querySelectorAll('#galTabs .tab'), gItems=[].slice.call(document.querySelectorAll('.gal-item'));
-  gTabs.forEach(function(t){t.addEventListener('click',function(){
-    gTabs.forEach(function(x){x.classList.remove('active')}); t.classList.add('active');
-    gItems.forEach(function(g){var show=t.dataset.f==='all'||g.dataset.c===t.dataset.f; g.classList.toggle('hide',!show); if(show)g.classList.add('in')});
-  })});
-  var lb=document.getElementById('lb'), lbImg=lb.querySelector('img'), lbCap=lb.querySelector('p'), cur=0;
-  function vis(){return gItems.filter(function(g){return !g.classList.contains('hide')})}
-  function show(i){var v=vis(); cur=(i+v.length)%v.length; var im=v[cur].querySelector('img'); lbImg.src=im.src; lbImg.alt=im.alt; lbCap.textContent=im.alt}
-  function openLb(g){lb.classList.add('open'); body.style.overflow='hidden'; show(vis().indexOf(g)); lb.querySelector('.x').focus()}
-  function closeLb(){lb.classList.remove('open'); body.style.overflow=''}
-  gItems.forEach(function(g){
-    g.addEventListener('click',function(){openLb(g)});
-    g.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();openLb(g)}});
-  });
-  lb.querySelector('.x').onclick=closeLb;
-  lb.querySelector('.pv').onclick=function(){show(cur-1)};
-  lb.querySelector('.nx').onclick=function(){show(cur+1)};
-  lb.addEventListener('click',function(e){if(e.target===lb)closeLb()});
-  document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return; if(e.key==='Escape')closeLb(); if(e.key==='ArrowLeft')show(cur-1); if(e.key==='ArrowRight')show(cur+1)});
-  var tx=0; lb.addEventListener('touchstart',function(e){tx=e.touches[0].clientX},{passive:true});
-  lb.addEventListener('touchend',function(e){var d=e.changedTouches[0].clientX-tx; if(Math.abs(d)>50)show(cur+(d<0?1:-1))});
-
-  // before / after driveway cleaning
-  var ba=document.getElementById('ba'), range=ba.querySelector('input');
-  var cClean=ba.querySelector('.clean-c'), cDirty=ba.querySelector('.dirty');
-  function rng(seed){return function(){seed=(seed*16807)%2147483647;return (seed-1)/2147483646}}
-  function paint(){
-    var dpr=Math.min(window.devicePixelRatio||1,2), W=ba.clientWidth, H=ba.clientHeight;
-    [cClean,cDirty].forEach(function(c){c.width=W*dpr;c.height=H*dpr});
-    drawDrive(cClean.getContext('2d'),W,H,dpr,false);
-    drawDrive(cDirty.getContext('2d'),W,H,dpr,true);
-  }
-  function drawDrive(ctx,W,H,dpr,dirty){
-    ctx.setTransform(dpr,0,0,dpr,0,0);
-    var r=rng(42), grass=H*.16, bw=Math.max(W/11,34), bh=bw/2, j=2.5;
-    // lawn
-    var g=ctx.createLinearGradient(0,0,0,grass); g.addColorStop(0,dirty?'#56692f':'#4f8f2c'); g.addColorStop(1,dirty?'#43561f':'#3f7a22');
-    ctx.fillStyle=g; ctx.fillRect(0,0,W,grass);
-    for(var i=0;i<W;i+=3){ctx.strokeStyle='rgba(20,60,10,'+(.2+r()*.3)+')';ctx.beginPath();ctx.moveTo(i,grass);ctx.lineTo(i+(r()-.5)*4,grass-4-r()*10);ctx.stroke()}
-    // kerb
-    ctx.fillStyle=dirty?'#3b3b38':'#4a4d52'; ctx.fillRect(0,grass,W,bh*.8);
-    for(var k=0;k<W;k+=bw*.7){ctx.fillStyle=dirty?'#2a2a27':'#3a3d42';ctx.fillRect(k,grass,1.5,bh*.8)}
-    // sand joints base
-    var top=grass+bh*.8;
-    ctx.fillStyle=dirty?'#4a4a3a':'#d8c9a3'; ctx.fillRect(0,top,W,H-top);
-    var cols=['#b0584a','#9c4c42','#c47a5a','#8d8a86','#a9a39a','#b8876a','#7f7c78','#c9a07a'];
-    var blocks=[];
-    for(var y=top,row=0;y<H;y+=bh,row++){
-      for(var x=(row%2?-bw/2:0);x<W;x+=bw){
-        var c=cols[Math.floor(r()*cols.length)];
-        blocks.push([x,y,c]);
-        ctx.fillStyle=c; ctx.fillRect(x+j/2,y+j/2,bw-j,bh-j);
-        // texture / bevel
-        var sh=ctx.createLinearGradient(x,y,x,y+bh); sh.addColorStop(0,'rgba(255,255,255,.18)'); sh.addColorStop(1,'rgba(0,0,0,.18)');
-        ctx.fillStyle=sh; ctx.fillRect(x+j/2,y+j/2,bw-j,bh-j);
-        for(var n=0;n<6;n++){ctx.fillStyle='rgba('+(r()>.5?'255,255,255':'0,0,0')+','+(r()*.12)+')';ctx.fillRect(x+r()*bw,y+r()*bh,2,2)}
-      }
-    }
-    if(!dirty){
-      // fresh sheen
-      var s=ctx.createLinearGradient(0,top,W,H); s.addColorStop(0,'rgba(255,255,255,.12)'); s.addColorStop(.5,'rgba(255,255,255,0)'); s.addColorStop(1,'rgba(255,255,255,.08)');
-      ctx.fillStyle=s; ctx.fillRect(0,top,W,H-top); return;
-    }
-    var d=rng(7);
-    // overall grime
-    ctx.fillStyle='rgba(55,50,30,.42)'; ctx.fillRect(0,top,W,H-top);
-    // algae / green patches
-    for(var p=0;p<26;p++){
-      var px=d()*W, py=top+d()*(H-top), pr=30+d()*110;
-      var rg=ctx.createRadialGradient(px,py,0,px,py,pr);
-      var green=d()>.4; rg.addColorStop(0,green?'rgba(60,85,25,.55)':'rgba(25,22,15,.5)'); rg.addColorStop(1,'rgba(0,0,0,0)');
-      ctx.fillStyle=rg; ctx.fillRect(px-pr,py-pr,pr*2,pr*2);
-    }
-    // moss in joints
-    ctx.lineCap='round';
-    blocks.forEach(function(b){
-      if(d()<.75){ctx.strokeStyle='rgba('+(40+d()*30|0)+','+(70+d()*40|0)+',22,'+(.55+d()*.4)+')';ctx.lineWidth=(1+d()*2.5)*bw/60;
-        ctx.beginPath();ctx.moveTo(b[0],b[1]);ctx.lineTo(b[0]+bw*(.3+d()*.7),b[1]);ctx.stroke()}
-      if(d()<.5){ctx.lineWidth=(1+d()*2)*bw/60;ctx.beginPath();ctx.moveTo(b[0],b[1]);ctx.lineTo(b[0],b[1]+bh);ctx.stroke()}
-      // lichen dots
-      if(d()<.35){for(var q=0;q<4;q++){ctx.fillStyle='rgba('+(d()>.5?'230,225,200':'20,20,15')+','+(.35+d()*.4)+')';ctx.beginPath();ctx.arc(b[0]+d()*bw,b[1]+d()*bh,1+d()*3,0,6.3);ctx.fill()}}
-    });
-    // weeds
-    for(var w=0;w<(W>600?18:9);w++){
-      var b=blocks[Math.floor(d()*blocks.length)], wx=b[0], wy=b[1]+bh*d();
-      for(var l=0;l<5;l++){ctx.strokeStyle='rgba(60,100,28,.9)';ctx.lineWidth=1+d()*1.5;ctx.beginPath();ctx.moveTo(wx,wy);ctx.quadraticCurveTo(wx+(d()-.5)*14,wy-8,wx+(d()-.5)*22,wy-10-d()*14);ctx.stroke()}
-    }
-    // oil stain
-    var ox=W*.62, oy=top+(H-top)*.6, orr=Math.min(W,H)*.14;
-    var og=ctx.createRadialGradient(ox,oy,0,ox,oy,orr); og.addColorStop(0,'rgba(10,10,10,.6)'); og.addColorStop(.7,'rgba(10,10,10,.3)'); og.addColorStop(1,'rgba(10,10,10,0)');
-    ctx.fillStyle=og; ctx.beginPath(); ctx.ellipse(ox,oy,orr*1.4,orr,0.3,0,6.3); ctx.fill();
-  }
-  function setX(v){ba.style.setProperty('--x',v+'%'); range.value=v;
-    ba.querySelector('.ba-tag.b').style.opacity=v<12?0:1; ba.querySelector('.ba-tag.a').style.opacity=v>88?0:1}
-  var anim=null;
-  function sweep(){
-    if(reduce){setX(50);return}
-    var start=null, dur=3200; ba.classList.add('washing');
-    function step(t){
-      if(!start)start=t; var k=Math.min((t-start)/dur,1);
-      // 100 -> 0 (wash everything) then back to 50
-      var v = k<.7 ? 100-100*easeInOut(k/.7) : 50*easeInOut((k-.7)/.3);
-      setX(v);
-      if(k<1)anim=requestAnimationFrame(step); else {ba.classList.remove('washing');anim=null}
-    }
-    anim=requestAnimationFrame(step);
-  }
-  function easeInOut(t){return t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2}
-  function stopAnim(){if(anim){cancelAnimationFrame(anim);anim=null;ba.classList.remove('washing')}}
-  range.addEventListener('input',function(){stopAnim();setX(+range.value);ba.classList.add('washing')});
-  range.addEventListener('change',function(){ba.classList.remove('washing')});
-  range.addEventListener('pointerup',function(){ba.classList.remove('washing')});
-  paint(); setX(100);
-  var rt; window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(paint,150)});
-  if('IntersectionObserver' in window){
-    var bo=new IntersectionObserver(function(en){if(en[0].isIntersecting){bo.disconnect();setTimeout(sweep,400)}},{threshold:.8});
-    bo.observe(ba);
-  } else setX(50);
-
-  document.getElementById('yr').textContent=new Date().getFullYear();
-})();
-</script>
+<script src="assets/site.js"></script>
 </body>
 </html>
