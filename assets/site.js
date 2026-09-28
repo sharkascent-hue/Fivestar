@@ -70,9 +70,9 @@
     var status=form.querySelector('.form-status'), btn=form.querySelector('button[type=submit]');
     function details(){
       var d=new FormData(form);
-      return {name:d.get('name')||'',phone:d.get('phone')||'',area:d.get('area')||'',service:d.get('service')||'',msg:d.get('msg')||''};
+      return {name:d.get('name')||'',phone:d.get('phone')||'',email:d.get('email')||'',area:d.get('area')||'',service:d.get('service')||'',msg:d.get('msg')||''};
     }
-    function asText(x){return 'Name: '+x.name+'\nPhone: '+x.phone+'\nArea: '+x.area+'\nService: '+x.service+'\n\n'+x.msg}
+    function asText(x){return 'Name: '+x.name+'\nPhone: '+x.phone+(x.email?'\nEmail: '+x.email:'')+'\nArea: '+x.area+'\nService: '+x.service+'\n\n'+x.msg}
     function say(type,html){status.className='form-status full '+type; status.innerHTML=html}
     form.addEventListener('submit',function(e){
       e.preventDefault();
@@ -81,16 +81,19 @@
         window.location.href='mailto:Fivestarhomeimprovements701@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(asText(x));
         return;
       }
+      // honeypot ticked = a bot: pretend it worked and send nothing
+      if(form.querySelector('[name=botcheck]').checked){form.reset(); say('ok','Thanks! Your enquiry has been sent.'); return;}
       btn.disabled=true; say('sending','Sending your enquiry…');
-      fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},
-        body:JSON.stringify({access_key:key,subject:subject,from_name:'Five Star website',name:x.name,phone:x.phone,area:x.area,service:x.service,message:x.msg,botcheck:form.querySelector('[name=botcheck]').checked})})
-      .then(function(res){return res.json()})
+      var payload={access_key:key,subject:subject,from_name:'Five Star website',name:x.name,phone:x.phone,area:x.area,service:x.service,message:x.msg};
+      if(x.email) payload.email=x.email;
+      fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(payload)})
+      .then(function(res){return res.text().then(function(t){var j;try{j=JSON.parse(t)}catch(_){j={success:false,message:'HTTP '+res.status}}return j})})
       .then(function(j){
-        if(!j.success) throw new Error(j.message);
+        if(!j.success) throw new Error(j.message||'Unknown error');
         form.reset(); say('ok','<b>Thanks, '+x.name.replace(/[<>&]/g,'')+'!</b> Your enquiry has been sent. We\'ll be in touch soon.');
       })
-      .catch(function(){
-        say('err','Sorry, that didn\'t send. Please call <a href="tel:+353851184881">085 118 4881</a> or use WhatsApp below.');
+      .catch(function(err){
+        say('err','Sorry, that didn\'t send. Please call <a href="tel:+353851184881">085 118 4881</a> or use WhatsApp below.<small class="err-detail">('+String(err&&err.message||err).replace(/[<>&]/g,'')+')</small>');
       })
       .then(function(){btn.disabled=false});
     });

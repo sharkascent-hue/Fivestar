@@ -316,6 +316,8 @@ footer a{color:var(--lime);text-decoration:none}
 .form-status.sending{background:var(--cream);color:var(--muted)}
 .form-status.ok{background:#e7f5dc;color:var(--green-800)}
 .form-status.err{background:#fdecea;color:#8a1c12}
+.err-detail{display:block;margin-top:6px;font-weight:500;font-size:.75rem;opacity:.8}
+.opt{font-weight:500;color:var(--muted)}
 
 /* Social links */
 .social{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
