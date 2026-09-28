@@ -325,6 +325,7 @@ footer a{color:var(--lime);text-decoration:none}
 .social a:hover{background:var(--gold);color:var(--green-900);transform:translateY(-3px)}
 .social svg{width:19px;height:19px;fill:currentColor}
 .foot-end{display:grid;gap:12px;justify-items:end}
+.foot-mail{overflow-wrap:anywhere}
 .social-lg{margin-top:22px;gap:12px}
 .social-lg span{font-weight:700;color:var(--green-800);font-size:.9rem;margin-right:4px}
 .social-lg a{width:46px;height:46px;background:var(--green-800)}
