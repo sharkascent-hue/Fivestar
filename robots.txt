@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://5starhomeimprovements.ie/sitemap.xml
