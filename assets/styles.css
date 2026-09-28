@@ -305,6 +305,18 @@ footer a{color:var(--lime);text-decoration:none}
 .center-btn{text-align:center;margin-top:40px}
 .about-more{margin-top:26px}
 
+/* Quote form states */
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.btn-wa{background:#25d366;color:#fff}
+.btn-wa:hover{background:#1fb858;transform:translateY(-3px)}
+.btn-wa svg{fill:#fff}
+.btn:disabled{opacity:.6;cursor:wait;transform:none}
+.form-status:empty{display:none}
+.form-status{padding:14px 16px;border-radius:12px;font-size:.9rem;font-weight:600}
+.form-status.sending{background:var(--cream);color:var(--muted)}
+.form-status.ok{background:#e7f5dc;color:var(--green-800)}
+.form-status.err{background:#fdecea;color:#8a1c12}
+
 /* Social links */
 .social{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 .social a{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.08);color:#fff;transition:background .25s,transform .25s}

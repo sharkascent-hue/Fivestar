@@ -64,15 +64,41 @@
     })});
   });
 
-  // quote form -> email
+  // quote form: send by Web3Forms when a key is set, otherwise open the email app; WhatsApp as an alternative
   var form=document.getElementById('quote');
-  if(form) form.addEventListener('submit',function(e){
-    e.preventDefault();
-    var d=new FormData(this);
-    var subject='Quote request: '+d.get('service')+' ('+d.get('name')+')';
-    var text='Name: '+d.get('name')+'\nPhone: '+d.get('phone')+'\nArea: '+d.get('area')+'\nService: '+d.get('service')+'\n\n'+d.get('msg');
-    window.location.href='mailto:Fivestarhomeimprovements701@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(text);
-  });
+  if(form){
+    var status=form.querySelector('.form-status'), btn=form.querySelector('button[type=submit]');
+    function details(){
+      var d=new FormData(form);
+      return {name:d.get('name')||'',phone:d.get('phone')||'',area:d.get('area')||'',service:d.get('service')||'',msg:d.get('msg')||''};
+    }
+    function asText(x){return 'Name: '+x.name+'\nPhone: '+x.phone+'\nArea: '+x.area+'\nService: '+x.service+'\n\n'+x.msg}
+    function say(type,html){status.className='form-status full '+type; status.innerHTML=html}
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var x=details(), subject='Quote request: '+x.service+' ('+x.name+')', key=form.dataset.key;
+      if(!key){
+        window.location.href='mailto:Fivestarhomeimprovements701@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(asText(x));
+        return;
+      }
+      btn.disabled=true; say('sending','Sending your enquiry…');
+      fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},
+        body:JSON.stringify({access_key:key,subject:subject,from_name:'Five Star website',name:x.name,phone:x.phone,area:x.area,service:x.service,message:x.msg,botcheck:form.querySelector('[name=botcheck]').checked})})
+      .then(function(res){return res.json()})
+      .then(function(j){
+        if(!j.success) throw new Error(j.message);
+        form.reset(); say('ok','<b>Thanks, '+x.name.replace(/[<>&]/g,'')+'!</b> Your enquiry has been sent. We\'ll be in touch soon.');
+      })
+      .catch(function(){
+        say('err','Sorry, that didn\'t send. Please call <a href="tel:+353851184881">085 118 4881</a> or use WhatsApp below.');
+      })
+      .then(function(){btn.disabled=false});
+    });
+    form.querySelector('.wa-send').addEventListener('click',function(){
+      var x=details();
+      window.open('https://wa.me/353851184881?text='+encodeURIComponent('Hi Five Star, I\'d like a quote.\n\n'+asText(x)),'_blank','noopener');
+    });
+  }
 
   // gallery lightbox
   var lb=document.getElementById('lb');

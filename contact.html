@@ -100,7 +100,7 @@
         <a class="ccard reveal d2" href="mailto:Fivestarhomeimprovements701@gmail.com"><span class="ic"><svg><use href="#i-mail"/></svg></span><span><small>Email</small><b>Fivestarhomeimprovements701@gmail.com</b></span></a>
         <div class="ccard reveal d3"><span class="ic"><svg><use href="#i-pin"/></svg></span><span><small>Based in</small><b>Dublin, Ireland</b></span></div>
       </div>
-      <form id="quote" class="reveal d1">
+      <form id="quote" class="reveal d1" data-key="">
         <h3>Request a free quote</h3>
         <label>Your name<input name="name" required autocomplete="name"></label>
         <label>Phone<input name="phone" type="tel" required autocomplete="tel"></label>
@@ -109,8 +109,11 @@
           <select name="service"><option>Landscaping</option><option>Tree care</option><option>Hedge trimming</option><option>Garden maintenance</option><option>Turf &amp; grass installation</option><option>Fencing</option><option>Roofing</option><option>Flat roofing</option><option>Exterior cleaning</option><option>Driveways &amp; patios</option><option>Painting &amp; decorating</option><option>Flooring &amp; tiling</option><option>Electrician</option><option>Plumber</option><option>Handyman</option><option>Repairs &amp; new fittings</option><option>Something else</option></select>
         </label>
         <label class="full">Tell us about the job<textarea name="msg" placeholder="What needs doing, and when?"></textarea></label>
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
         <button class="btn btn-gold full" type="submit"><svg><use href="#i-mail" fill="none" stroke="currentColor" stroke-width="2"/></svg>Send enquiry</button>
-        <p class="form-note full">This opens your email app with your details filled in. Prefer to talk? Call <a href="tel:+353851184881">085 118 4881</a>.</p>
+        <button class="btn btn-wa full wa-send" type="button"><svg><use href="#i-wa"/></svg>Send on WhatsApp instead</button>
+        <p class="form-status full" role="status" aria-live="polite"></p>
+        <p class="form-note full">Prefer to talk? Call <a href="tel:+353851184881">085 118 4881</a>.</p>
       </form>
     </div>
     <div class="follow">
